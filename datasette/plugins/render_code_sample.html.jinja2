@@ -1,0 +1,13 @@
+<dl class="render-code-sample">
+    <dt>
+        <pre style="counter-reset: line {{ line_number - 1 }};">
+            {{- escaped_code|safe -}}
+        </pre>
+    </dt>
+    <dd>
+        <a class="render-code-sample_github-permalink" title="View on GitHub" href="{{ github_url }}">
+            <span class="render-code-sample_visually-hidden">permalink to source code</span>
+            <span aria-hidden="true">{{ file_path }}#L{{ line_number }}</span>
+        </a>
+    </dd>
+</dl>

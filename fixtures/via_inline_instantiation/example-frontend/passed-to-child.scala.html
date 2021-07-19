@@ -1,0 +1,17 @@
+@this()
+
+@()
+
+new ConsumingComponent(new GovukButton())
+new ConsumingComponent(match {
+    case _ => { new uk.gov.hmrc.govukfrontend.components.govukButton() }
+    case _ => {  new components.govukButton() }
+    case _ => {new GovukButton("test")}
+    case _ => {
+        new govukButton()
+    }
+})
+new ConsumingComponent(
+new govukButton()
+)
+new ConsumingComponent(new govukButton())

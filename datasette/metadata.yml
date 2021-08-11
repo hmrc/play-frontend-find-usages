@@ -1,0 +1,6 @@
+plugins:
+  datasette-render-code-sample:
+    columns:
+      - usage_example
+extra_css_urls:
+  - /static/extra_styles.css
